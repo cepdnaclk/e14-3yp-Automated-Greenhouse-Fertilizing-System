@@ -1,57 +1,57 @@
-___
-# DELETE THIS INSTRUCTIONS AND ADD AN INTRODUCTION ABOUT YOUR PROJECT
-___
+---
+layout: home
+permalink: index.html
+repository-name: e14-3yp-Automated-Greenhouse-Fertilizing-System
+title: Automated Greenhouse Fertilizing System
+---
+# Automated Greenhouse Fertilizing System
 
-# eYY-3yp-project-template
+---
+## Team
+-  E/14/287, R.M.K.D Rathnayake, [e14287@eng.pdn.ac.lk](mailto:e14287@eng.pdn.ac.lk)
+-  E/14/335, K.R.W.R Subasinghe, [e14335@eng.pdn.ac.lk](mailto:e14335@eng.pdn.ac.lk)
+-  E/14/402, G.A.A.M.B Wimalasena, [e14402@eng.pdn.ac.lk](mailto:e14402@eng.pdn.ac.lk)
 
-This is a sample repository you can use for your Embedded Systems project. Once you followed these instructions, remove the text and add a brief introduction to here.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Solution Architecture](#solution-architecture )
+3. [Links](#links)
 
-### Enable GitHub Pages
+---
 
-You can put the things to be shown in GitHub pages into the _docs/_ folder. Both html and md file formats are supported. You need to go to settings and enable GitHub pages and select _main_ branch and _docs_ folder from the dropdowns, as shown in the below image.
+## Introduction
 
-![image](https://user-images.githubusercontent.com/11540782/98789936-028d3600-2429-11eb-84be-aaba665fdc75.png)
 
-### Special Configurations
+This project aims to calculate the component(N , K , P) levels which are responsible for the growth of the plant in a real time basis and maintain the component level which is required for the relevant plant. Using this system we can increase the lifetime of a plant and can get the maximum harvest out of the plant.
 
-These projects will be automatically added into [https://projects.ce.pdn.ac.lk](). If you like to show more details about your project on this site, you can fill the parameters in the file, _/docs/index.json_
+In the traditional system we won't get the perfect component levels as we are not checking the current component level. (We are adding the same amount of water or fertilizers to the every plant irrespective of the component level in that plant).
 
-```
-{
-  "title": "This is the title of the project",
-  "team": [
-    {
-      "name": "Team Member Name 1",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 2",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 3",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    }
-  ],
-  "supervisors": [
-    {
-      "name": "Dr. Supervisor 1",
-      "email": "email@eng.pdn.ac.lk"
-    },
-    {
-      "name": "Supervisor 2",
-      "email": "email@eng.pdn.ac.lk"
-    }
-  ],
-  "tags": ["Web", "Embedded Systems"]
-}
-```
+First using sensors we will get the current component level of each and every plant. Then the data will be transmitted to a centralized server. Then the server will check whether the component level of each plant are up to the required level. For different varities of plants the component levels are also differ. If a component level of a certain plant is not up to the required level the server will send a command  to the automated pipeline system asking it to send the relevant amount of required components through the pipeline to the relevant plant.
 
-Once you filled this _index.json_ file, please verify the syntax is correct. (You can use [this](https://jsonlint.com/) tool).
+## Solution Architecture
 
-### Page Theme
+Project Plan
 
-A custom theme integrated with this GitHub Page, which is based on [github.com/cepdnaclk/eYY-project-theme](https://github.com/cepdnaclk/eYY-project-theme). If you like to remove this default theme, you can remove the file, _docs/\_config.yml_ and use HTML based website.
+Embedded Systems Design
+
+PH sensors and Humidity sensors are used to measure the PH level and the humidity level of the soil in a particular plant.
+Temperature sensors are used to measure the temperature within the greenhouse.
+Node mcu is used to transfer data from the sensors to the server.
+Arduino uno will be used to control the fertilizer dispersion system.
+![image](https://user-images.githubusercontent.com/73756777/120117793-87188980-c1ac-11eb-8f84-c89fdc34bdff.png)
+![image](https://user-images.githubusercontent.com/73756777/120117796-8d0e6a80-c1ac-11eb-97a1-b2f8176538e8.png)
+![image](https://user-images.githubusercontent.com/73756777/120117802-9bf51d00-c1ac-11eb-8716-bf7f4a424e21.png)
+![image](https://user-images.githubusercontent.com/73756777/120117931-67ce2c00-c1ad-11eb-9e08-8ee3d67d944d.png)
+
+
+
+## Links
+
+- <a href = "https://github.com/cepdnaclk/e14-3yp-Automated-Greenhouse-Fertilizing-System" target = "_blank"> Project Repository </a>
+- <a href = "https://cepdnaclk.github.io/e14-3yp-Automated-Greenhouse-Fertilizing-System/" target = "_blank">Project Page</a>
+- <a href = "http://www.ce.pdn.ac.lk/" target = "_blank">Department of Computer Engineering</a>
+- <a href = "https://eng.pdn.ac.lk/" target = "_blank">University of Peradeniya</a>
+
+
+[//]: # (Please refer this to learn more about Markdown syntax)
+[//]: # (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
